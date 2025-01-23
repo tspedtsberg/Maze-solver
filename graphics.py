@@ -6,6 +6,7 @@ class Window:
         self.__root.title("Maze Solver")
         self.__canvas = Canvas(self.__root, bg="white", height=height, width=width)
         self.__canvas.pack()
+        self.__canvas.create_text(width/2, 30, text="Maze Solver", font=('Helvetica 15 bold'))
         self.__running = False
         self.__root.protocol("WM_DELETE_WINDOW", self.close)
 
